@@ -1,10 +1,10 @@
 /*
 Theme Name: Carmine
-Theme URI: http://www.wpbeaverbuilder.com
+Theme URI: http://www.vanessarusu.com
 Version: 1.0
-Description: An example child theme that can be used as a starting point for custom development.
-Author: The Beaver Builder Team
-Author URI: http://www.fastlinemedia.com
+Description: Github Connected. A WordPress theme for the Carmine Development Project by Vive Development and Corley Developments
+Author: Vanessa Rusu
+Author URI: http://vanessarusu.com
 template: bb-theme
 */
 
@@ -19,16 +19,3 @@ template: bb-theme
     width: 100%;
     margin: 0 auto;
 }
-
-
-
-/* .two-column-width {
-    .fl-module-rich-text,
-    .fl-module-heading,
-    .two-column-width-image,
-    .fl-module-button {
-        max-width: 650px;
-        width: 100%;
-        margin: 0 auto;
-    }
-} */
