@@ -1,0 +1,40 @@
+#menu-primary-menu {
+    li {
+        &.fa {
+            border: none;
+            padding: 0;
+            margin: 0;
+            width: 32px;
+            margin: 0 2px;
+            font-size: 0;
+            text-align: center;
+
+            &:before {
+                font-family: 'Font Awesome 5 Brands';
+                display: block;
+                opacity: 1;
+                font-size: 20px;
+                pointer-events: none;
+
+                position: absolute;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-primary-menu {
+        padding-top: 100px;
+
+        li {
+            border: none;
+            a {
+                padding: 20px 10px;
+            }
+        }
+    }
+}

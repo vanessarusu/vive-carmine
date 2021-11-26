@@ -1,0 +1,55 @@
+body:not(.fl-builder-edit) #lightboxForm {
+    position: relative;
+
+    .fl-row-content-wrap {
+        width: 98%;
+        max-width: 1325px;
+        margin: auto;
+    }
+
+    &.lightbox-open {
+        display: flex;
+        position: fixed;
+        overflow-y: scroll;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        &:before {
+            content: '';
+            background: rgba($brand-teal, 0.8);
+            background-blend-mode: multiply;
+            display: block;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // dismiss
+    .lightbox-dismiss {
+        position: absolute;
+        top: 1px;
+        right: 0;
+        cursor: pointer;
+        @media (max-width: 768px) {
+            top: -40px;
+            right: 10px;
+            // display: none;
+        }
+    }
+}
+
+// fix overflow of pattern on column
+#lightboxForm {
+    .fl-col.position-relative {
+        overflow: hidden;
+    }
+}

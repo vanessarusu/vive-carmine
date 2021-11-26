@@ -1,0 +1,14 @@
+@import './layout';
+@import './form-fields';
+@import './dropdowns';
+@import './validation';
+
+:root {
+    --form-black: #101820;
+    --form-error: #980c0c;
+    --form-success: #33CC00;
+}
+
+body:not(.fl-builder-edit) #lightboxForm {
+    display: none;
+}

@@ -1,0 +1,14 @@
+.modal-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.z-index-bump {
+    z-index: 10;
+}

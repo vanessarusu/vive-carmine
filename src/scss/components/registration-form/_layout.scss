@@ -1,0 +1,89 @@
+#registrationForm form * {
+    font-family: "Open Sans",sans-serif;
+    color: var(--form-black);
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+#registrationForm form {
+
+    .field-container {
+        padding: 10px 0;
+        clear: both;
+        .left {
+            float: left;
+            width: 48%;
+            margin-right: 2%;
+        }
+        
+        .right {
+            clear: none;
+            float: left;
+            width: 50%;
+        }
+
+        &:after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+    }
+
+    .form-suite-field {
+        width: 38%;
+        float: left;
+        margin-right: 4%;
+
+        label {
+            margin-bottom: 10px;
+        }
+    }
+
+    .form-referrer-field {
+        width: 58%;
+        float: left;
+        clear: none;
+
+        label {
+            margin-bottom: 10px;
+        }
+    }
+
+    .clear {
+        clear: both;
+        padding-top: 10px;
+    }
+
+    ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    span.asterisk {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #lightboxForm form {
+        .field-container {
+            .left,
+            .right {
+                width: 100%;
+                clear: both;
+                float: none;
+            }
+    
+            .right {
+                padding: 20px 0 0;
+            }
+        }
+
+        .form-suite-field,
+        .form-referrer-field {
+            width: 100%;
+            float: none;
+        }
+    } 
+}

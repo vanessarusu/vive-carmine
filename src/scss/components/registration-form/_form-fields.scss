@@ -1,0 +1,130 @@
+#registrationForm form {
+    .formLabel {
+        font-size: 13px;
+        vertical-align: top;
+    }
+}
+
+#registrationForm form {
+
+    label {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 0 0 4px 0;
+        display: block;
+    }
+
+    input {
+        background: #fff;
+        outline: 0;
+        border: none;
+        border-bottom: 1px solid #101820;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        height: 38px;
+        padding: 6px 10px;
+        padding-left: 0;
+        border-radius: 0;
+
+        &[type="submit"] {
+            background: var(--brand-red);
+            color: white;
+            border-radius: 25px 0;
+            max-width: 240px;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            font-size: 16px;
+            padding: 1.6rem;
+            margin-top: 100px;
+            border: none;
+            display: block;
+            height: unset;
+            margin-left: 0;
+            transition: all 0.15s ease-in-out;
+
+            &:hover {
+                background: var(--brand-teal);
+            }
+        }
+    }
+
+    .radio-buttons {
+        display: flex;
+        clear: none;
+        text-align: right;
+        float: left;
+        width: 48%;
+        flex-wrap: wrap;
+
+        &.clear {
+            clear: both;
+        }
+
+        label {
+            &.radio {
+                font-weight: 600;
+                padding-left: 30px;
+                padding-right: 10px;
+                position: relative;
+                font-size: 14px;
+                margin: 0;
+                display: inline-block;
+                min-width: 60px;
+
+                &:before {
+                    content: '';
+                    left: 0;
+                    top: -5px;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    padding: 3px;
+                    background-clip: content-box;
+                    box-sizing: border-box;
+                    border: 2px solid #101820;
+                    border-radius: 50%;
+                }
+
+                span {
+                    font-size: 14px;
+                    color: var(--brand-red);
+                    font-weight: 600;
+                }
+            }
+        }
+
+        input {
+            max-width: 50px;
+            display: none;
+        }
+
+        input:checked+label.radio:before {
+            background-color: var(--brand-teal);
+        }
+
+        .inline-label {
+            margin-right: 10px;
+        }   
+    }
+}
+
+@media (max-width: 768px) {
+    #lightboxForm form {
+
+        label {
+            font-size: 13px;
+        }
+
+        .radio-buttons {
+            width: 100%;
+        }
+    } 
+}

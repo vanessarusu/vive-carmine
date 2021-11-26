@@ -1,0 +1,148 @@
+#lightboxForm form select {
+    display: none;
+}
+
+#registrationForm .custom-dropdown {
+    @media (max-width:1200px) {
+        display: none;
+    }
+
+    text-align: center;
+    position: relative;
+
+    .selected-option {
+        background: #e1e2e3;
+        padding: 6px;
+        position: relative;
+        border: 4px solid #e1e2e3;
+        min-height: 37px;
+
+        .text {
+            display: block;
+            font-size: 15px !important;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-left: -26px;
+            min-height: 21px;
+        }
+
+        .arrow {
+            width: 26px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: var(--brand-teal);
+            display: inline-block;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 60%;
+                height: 60%;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: url(http://localhost:8888/vive-carmine/wordpress/wp-content/uploads/2021/11/dropdown-arrow-white.svg) center center no-repeat;
+            }
+        }
+    }
+
+    .dd-container {
+        display: none;
+        margin-top: 1px !important;
+
+        &.dd-closed {
+            display: none;
+        }
+
+        &.dd-open {
+            display: block;
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 5px 8px 0 rgba(16, 24, 32, 0.1);
+            top: 41px;
+        }
+    }
+
+    .dropdown-item {
+        margin-bottom: 0 !important;
+        border-bottom: 1px solid #fff !important;
+        &:last-of-type {
+            border-bottom: none !important;
+        }
+
+        a {
+            color: #101820;
+            padding: 10px;
+            display: block;
+            font-size: 15px !important;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: #e1e2e3;
+            transition: all 0.15s ease-in-out;
+            text-decoration: none;
+            min-height: 38px;
+
+            &:hover {
+                background: var(--brand-teal);
+                color: white;
+            }
+        }
+    }
+
+    .empty {
+        display: none;
+    }
+}
+
+#registrationForm {
+    #mce-responses {
+        .response {
+            font-size: 16px;
+            &#mce-success-response {
+                font-size: 30px;
+                max-width: 500px;
+            }
+            &#mce-error-response {
+                color: var(--form-error);
+            }
+        }
+    }
+
+    .mce_inline_error {
+        font-size: 14px;
+        padding: 0.5rem 0;
+        color: var(--form-error);
+        text-align: left;
+        display: block;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    #lightboxForm form select {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+        border-radius: 2px;
+        color: var(--form-black);
+        box-sizing: border-box;
+        float: none;
+        font-size: 16px !important;
+        border: 1px solid #ccc;
+        padding: 6px 10px;
+        height: 38px;
+        line-height: 1.3;
+        display: block;
+    }
+}
