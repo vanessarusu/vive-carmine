@@ -32,3 +32,18 @@ function filter_media_comment_status( $open, $post_id ) {
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 
 add_action('wp_enqueue_scripts', '_carmine_assets', 1000 );
+
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/images/carmine-logo.svg);
+            height:105px;
+            width:320px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-bottom: 30px; 
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

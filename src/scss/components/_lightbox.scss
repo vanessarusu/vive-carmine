@@ -10,7 +10,7 @@ body:not(.fl-builder-edit) #lightboxForm {
     &.lightbox-open {
         display: flex;
         position: fixed;
-        overflow-y: scroll;
+        overflow-y: scroll; 
         top: 0;
         bottom: 0;
         z-index: 9999;
